@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wei Yang - Homepage</title>
+    <style>
+        /* 保持极简学术风格 CSS */
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 40px 20px;
+        }
+        h1, h2, h3 { color: #2c3e50; }
+        a { color: #0366d6; text-decoration: none; }
+        a:hover { text-decoration: underline; }
+        
+        .header {
+            display: flex;
+            align-items: center;
+            border-bottom: 1px solid #eee;
+            padding-bottom: 30px;
+            margin-bottom: 30px;
+        }
+        .header img {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            object-fit: cover;
+            margin-right: 30px;
+            border: 3px solid #f0f0f0;
+        }
+        .intro h1 { margin-bottom: 5px; }
+        .intro p { margin: 5px 0; }
+        
+        .section-title {
+            border-bottom: 2px solid #f0f0f0;
+            padding-bottom: 10px;
+            margin-top: 40px;
+            margin-bottom: 20px;
+        }
+
+        /* 论文列表样式优化 */
+        .paper { margin-bottom: 25px; }
+        .paper-title { font-weight: bold; font-size: 1.05em; color: #000; }
+        .paper-authors { color: #444; margin: 4px 0; }
+        .paper-venue { font-style: italic; color: #666; }
+        .tag {
+            display: inline-block;
+            background: #e1ecf4;
+            color: #39739d;
+            padding: 2px 6px;
+            border-radius: 4px;
+            font-size: 0.85em;
+            margin-right: 5px;
+        }
+        .tag-accept { background: #e6fffa; color: #2c7a7b; }
+        
+        @media (max-width: 600px) {
+            .header { flex-direction: column; text-align: center; }
+            .header img { margin-right: 0; margin-bottom: 20px; }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="header">
+        <img src="photo.jpg" alt="Wei Yang"> 
+        <div class="intro">
+            <h1>Wei Yang</h1>
+            <p><strong>Undergraduate Student</strong></p>
+            <p>North China Electric Power University (NCEPU)</p>
+            <p>Major: Computer Science and Technology</p>
+            <p>Email: <a href="mailto:wei_yang_edu@yeah.net">wei_yang_edu@yeah.net</a></p>
+            <p style="margin-top: 10px;">
+                <a href="https://github.com/miemie0922">[GitHub]</a>
+            </p>
+        </div>
+    </div>
+
+    <section>
+        <h2 class="section-title">About Me</h2>
+        <p>
+            I am a third-year undergraduate student at <a href="https://www.ncepu.edu.cn/">North China Electric Power University (NCEPU)</a>, majoring in Computer Science.
+        </p>
+        <p>
+            My research interests focus on <strong>Multimodal Large Language Models (MLLMs)</strong>. I am dedicated to advancing the self-enhancement and self-evolution capabilities of VLMs, with a particular focus on achieving human-like hierarchical reasoning and consistency in data-limited scenarios.
+        </p>
+    </section>
+
+    <!-- <section>
+        <h2 class="section-title">News</h2>
+        <ul>
+            <li><strong>[2025.11]</strong> One paper on VLM hierarchical reasoning (SEKD) was submitted to <strong>CVPR 2026</strong>.</li>
+            <li><strong>[2025.07]</strong> One paper on medical multi-modal learning was accepted by <strong>ACM MM 2025</strong>.</li>
+            <li><strong>[2024.12]</strong> Joined Digital Media Lab at UCAS as a Research Intern.</li>
+        </ul>
+    </section> -->
+    <section>
+        <h2 class="section-title">Publications</h2>
+        
+        <div class="paper">
+            <div class="paper-title">
+                <a href="https://arxiv.org/abs/2511.18415" target="_blank">
+                    Self-Empowering VLMs: Achieving Hierarchical Consistency via Self-Elicited Knowledge Distillation
+                </a>
+            </div>
+            <div class="paper-authors">
+                <strong>Wei Yang*</strong>, Yiran Zhu*, Zilin Li, Xunjia Zhang, Hongtao Wang†
+            </div>
+            <div class="paper-venue">
+                arXiv preprint arXiv:2511.18415
+            </div>
+        </div>
+
+        <div class="paper">
+            <div class="paper-title">
+                <a href="https://dl.acm.org/doi/10.1145/3746027.3755619#artseq-00002" target="_blank">
+                    HER2 Expression Prediction with Flexible Multi-Modal Inputs via Dynamic Bidirectional Reconstruction
+                </a>
+            </div>
+            <div class="paper-authors">
+                Jie Qin*, <strong>Wei Yang*</strong> , Yan Su, Yiran Zhu, Weizhen Li, Yunyue Pan, Chengchang Pan†, Honggang Qi†
+            </div>
+            <div class="paper-venue">
+                <strong>ACM Multimedia (ACM MM) 2025</strong>
+            </div>
+        </div>
+
+    </section>
+
+
+    <footer style="margin-top: 50px; border-top: 1px solid #eee; padding-top: 20px; font-size: 0.8em; color: #888;">
+        <p>&copy; 2025 Wei Yang. Last updated: Dec 2025.</p>
+    </footer>
+
+</body>
+</html>
